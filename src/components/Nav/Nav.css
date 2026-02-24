@@ -1,0 +1,19 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  height: 80px;
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 60px;
+  align-self: center;
+}
+
+.mainLogo {
+  width: 100px;
+  height: 80px;
+}
