@@ -1,10 +1,10 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 
-function App() {
+function App(props) {
   return (
     <main className="main">
-      <Header />
+      <Header products={props.products}/>
     </main>
   );
 }
