@@ -1,5 +1,6 @@
 import React from "react";
 import "./Products.css";
+import ProductButtons from "../ProductButtons/ProductButtons";
 
 export default class Products extends React.Component {
   render() {
@@ -9,6 +10,9 @@ export default class Products extends React.Component {
         <img className="productImage" src={this.props.el.image} alt="" />
         <p className="headerBoxDescription">{this.props.el.description}</p>
         <p>{`${"Price"} ${this.props.el.price} ${"$"}`}</p>
+        <div className="buttonContainer">
+        <ProductButtons />
+        </div>
       </div>
     );
   }
