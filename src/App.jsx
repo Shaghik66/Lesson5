@@ -1,12 +1,14 @@
 import React from "react";
 import "./App.css";
-import Header from "./components/Header/Header";
+import Section from "./components/Section/Section";
+import Nav from "./components/Nav/Nav";
 
 export default class App extends React.Component {
   render() {
     return (
       <main className="main">
-        <Header products={this.props.products} />
+         <Nav />
+        <Section products={this.props.products} />
       </main>
     );
   }
