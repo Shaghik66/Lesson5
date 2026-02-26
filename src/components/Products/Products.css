@@ -19,3 +19,13 @@
     width: fit-content;
     margin-bottom: 20px;
 }
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.productPrice{
+    margin-bottom: 10px;
+}

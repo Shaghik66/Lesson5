@@ -9,7 +9,7 @@ export default class Products extends React.Component {
         <h1 className="headerBoxTitle">{this.props.el.title}</h1>
         <img className="productImage" src={this.props.el.image} alt="" />
         <p className="headerBoxDescription">{this.props.el.description}</p>
-        <p>{`${"Price"} ${this.props.el.price} ${"$"}`}</p>
+        <p className="productPrice">{`${"Price"} ${this.props.el.price} ${"$"}` }</p>
         <div className="buttonContainer">
         <ProductButtons />
         </div>

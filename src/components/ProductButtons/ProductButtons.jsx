@@ -1,4 +1,5 @@
 import React from "react";
+import "./ProductButtons.css"
 
 export default class ProductButtons extends React.Component {
   constructor(props) {
@@ -21,9 +22,9 @@ export default class ProductButtons extends React.Component {
   render() {
     return (
       <>
-        <button onClick={() => this.decrement()}>-</button>
+        <button onClick={() => this.decrement()} type="button" className="productButton">-</button>
         <p>{this.state.count}</p>
-        <button onClick={() => this.increment()}>+</button>
+        <button onClick={() => this.increment()} type="button" className="productButton">+</button>
       </>
     );
   }
