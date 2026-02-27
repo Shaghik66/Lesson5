@@ -5,6 +5,7 @@ import ProductButtons from "../ProductButtons/ProductButtons";
 export default class Products extends React.Component {
   render() {
     return (
+      
       <div className="productDiv">
         <h1 className="headerBoxTitle">{this.props.el.title}</h1>
         <img className="productImage" src={this.props.el.image} alt="" />

@@ -6,11 +6,12 @@ export default class Section extends React.Component {
   render(){
   return (
     <header >
-     
+     <div className="productContainer">
       <div className="productsContainer">
         {this.props.products.map((el) => {
           return <Products el={el} />;
         })}
+      </div>
       </div>
     </header>
   );}
