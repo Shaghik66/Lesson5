@@ -4,10 +4,10 @@ import "./ProductButtons.css"
 export default class ProductButtons extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { count: 0 };
-  }
+    this.state = { count: 0};
+}
 
-  increment() {
+increment() {
     this.setState({ count: ++this.state.count });
   }
 
@@ -22,9 +22,9 @@ export default class ProductButtons extends React.Component {
   render() {
     return (
       <>
-        <button onClick={() => this.decrement()} type="button" className="productButton">-</button>
+        <button onClick={() => this.decrement()} type="button" className="productButton">➖</button>
         <p>{this.state.count}</p>
-        <button onClick={() => this.increment()} type="button" className="productButton">+</button>
+        <button onClick={() => this.increment()} type="button" className="productButton">➕</button>
       </>
     );
   }
